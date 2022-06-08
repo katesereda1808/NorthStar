@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+.body{
+    width: 100%;
+
+}
+.container{
+    /* margin: 59px 200px; */
+    /* max-width: 1600px; */
+}
+a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.block{
+    /* padding: 59px 200px; */
+    padding-left: 100px;
+    padding-right: 100px;
+
+}
+/* //цены на услуги */
+.h1{
+    font-weight: 600;
+    font-size: 40px;
+}
+/* модели автомобилей */
+.h2{
+    font-weight: 600;
+    font-size: 24px;
+}
+/* диагностика системы впрыска */
+.p1{
+    font-weight: 500;
+    font-size: 18px;
+}
+/* малярные работы */
+.p2{
+    font-weight: 500;
+    font-size: 14px;
+}
+/* малярные работы кнопка */
+button{
+    font-weight: 600;
+    font-size: 16px;
+    /* /// */
+    width: 237px;
+    height: 44px;
+    border-radius: 4px;
+}
+.header_brands{
+    width: 100%;
+    overflow-x: scroll;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.header_brands_item{
+    font-size: 12px;
+    font-weight: 500;
+    color: hsla(229, 40%, 34%, 0.6);
+    background-color: #F0F0F0;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-right: 10px;
+    border-radius: 10px;
+    white-space: nowrap;
+    /* display: flex;
+    flex-wrap: nowrap; */
+    height: 15px;
+}
+.header_top{
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.arrow_right img{
+    transform: rotate(180deg);
+}
+.header_main{
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.header_main_colomn{
+    width: 50%;
+}
+.header_main_colomn2{
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; */
+    display: flex;
+    flex-direction: row;
+}
+.header_main_colomn2_address, .header_main_colomn2_phone{
+    margin-right: 50px;
+}
+.header_contacts{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.header_bottom{
+    background-color: #333E7B;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+
+}
+.header_main_navbar{
+    display: flex;
+    flex-direction: row;
+    color: #FFFFFF;
+    margin-right: 100px;
+    
+}
+.main_navbar_item{
+    margin-right: 30px;
+}
+.header_socials{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 125px;
+}
+
+.header_btn{
+
+}
+/* ///// */
+.page_content{
+ height: 300px;
+ background-color: #9b9fb9;
+}
+/* ////// */
+.column{
+    display: flex;
+    flex-direction: column;
+}
+.footer{
+    
+    color: #FFFFFF;
+    background-color: #333E7B;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    height: 500px;
+}
+.footer_column1, .footer_column2, .footer_column3{
+    justify-content: space-between;
+}
+.footer_column1 li, .footer_column2 a{
+    margin-top: 20px;
+}
+
+.footer_column1 a, .footer_column2 a{
+    font-weight: 600;
+    font-size: 16px;
+}
+.footer_socials{
+    margin-top: 50px;
+}
+.footer_column2{
+    width: 280px;
+}
+.footer_column2 nav{
+    display: flex;
+    flex-direction: column;
+    margin-top: -20px;
+}
+.footer_column3{
+    align-items: flex-end;
+}
+.footer_logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+}
+.footer_logo img{
+    margin-right: 20px;
+}
+
+/* 600
+16px */
+/* 500
+14px */
+/* 400
+14px */
+@media (max-width:900px) {
+    /* //цены на услуги */
+    .h1{
+    font-weight: 600;
+    font-size: 24px;
+    }
+/* модели автомобилей */
+    /* .h2{
+    font-weight: 600;
+    font-size: 24px;
+    } */
+/* диагностика системы впрыска */
+    .p1{
+    font-weight: 600;
+    font-size: 14px;
+    }
+/* малярные работы */
+    .p2{
+    font-weight: 500;
+    font-size: 14px;
+    }
+/* малярные работы кнопка */
+    button{
+    font-weight: 600;
+    font-size: 16px;
+    }
+
+}
