@@ -14,7 +14,7 @@
     /* max-width: 1600px; */
 }
 a{
-    color: #FFFFFF;
+    /* color: #FFFFFF; */
     text-decoration: none;
 }
 li{
@@ -27,12 +27,12 @@ li{
 
 }
 /* //цены на услуги */
-.h1{
+h1{
     font-weight: 600;
     font-size: 40px;
 }
 /* модели автомобилей */
-.h2{
+h2{
     font-weight: 600;
     font-size: 24px;
 }
@@ -102,6 +102,7 @@ button{
     flex-wrap: wrap; */
     display: flex;
     flex-direction: row;
+    justify-content: flex-end;
 }
 .header_main_colomn2_address, .header_main_colomn2_phone{
     margin-right: 50px;
@@ -142,8 +143,7 @@ button{
 }
 /* ///// */
 .page_content{
- height: 300px;
- background-color: #9b9fb9;
+ /* background-color: #9b9fb9; */
 }
 /* ////// */
 .column{
@@ -160,6 +160,9 @@ button{
     padding-top: 60px;
     padding-bottom: 60px;
     height: 500px;
+}
+.footer a{
+    color: #FFFFFF;
 }
 .footer_column1, .footer_column2, .footer_column3{
     justify-content: space-between;
@@ -196,12 +199,75 @@ button{
     margin-right: 20px;
 }
 
+
 /* 600
 16px */
 /* 500
 14px */
 /* 400
 14px */
+.main_page_block1{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 100px;
+}
+.main_page_block1 a{
+    color: #000;
+    margin-top: 30px;
+}
+.main_page_block1_img{
+    margin-right: -100px;
+    /* position: absolute;
+    right: 0; */
+}
+.main_page_block1 .text{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 20px;
+    left: 100px;
+    /* z-index: 1; */
+}
+.main_page_block1 li{
+    margin-top: 20px;
+}
+.block1_btn{
+    margin-top: 50px;
+    color: #FFFFFF;
+    background-color: #D31313;
+}
+
+
+.main_page_block2{
+    background-color: #FFFFFF;
+    color: #000;
+    margin-top: 100px;
+
+    /* flex-direction: row;
+    justify-content: space-between; */
+    
+}
+.main_page_block2 a{
+    color: #000;
+}
+.main_page_block2 .block_content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.main_page_block2 .column2{
+    width: 400px
+}
+.main_page_block2 .block_heading{
+    width: 100%;
+    text-align: center;
+}
+.main_page_block2 .block_content{
+    display: flex;
+    margin-top: 50px;
+}
 @media (max-width:900px) {
     /* //цены на услуги */
     .h1{
