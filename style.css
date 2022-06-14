@@ -10,6 +10,7 @@
 
 }
 .container{
+    overflow: hidden;
     /* margin: 59px 200px; */
     /* max-width: 1600px; */
 }
@@ -54,6 +55,15 @@ button{
     width: 237px;
     height: 44px;
     border-radius: 4px;
+}
+.red_button{
+    background-color: #D31313;
+    color: #FFFFFF;
+}
+.blue_emphasize{
+    font-size: 40px;
+    font-weight: 600;
+    color: #344079;
 }
 .header_brands{
     width: 100%;
@@ -111,6 +121,7 @@ button{
     display: flex;
     flex-direction: row;
     align-items: center;
+    width: 160px;
 }
 .header_bottom{
     background-color: #333E7B;
@@ -125,7 +136,7 @@ button{
     display: flex;
     flex-direction: row;
     color: #FFFFFF;
-    margin-right: 100px;
+    margin-right: 50px;
     
 }
 .main_navbar_item{
@@ -198,13 +209,21 @@ button{
 .footer_logo img{
     margin-right: 20px;
 }
-.services_item{
+.list_item{
     height: 70px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     border-bottom: 2px solid hsla(231, 41%, 34%, 0.2);
+}
+.services_item{
+    /* height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid hsla(231, 41%, 34%, 0.2); */
 }
 
 
@@ -273,6 +292,13 @@ button{
     width: 55%;
     /* width: 20vw;; */
 }
+.main_page_block2 .goTo{
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
+    font-size: 16px;
+    font-weight: 600;
+}
 .main_page_block2 .block_heading{
     width: 100%;
     text-align: center;
@@ -285,6 +311,139 @@ button{
     color:#FFFFFF;
     background-color: #D31313;
 }
+.main_page_block3{
+    margin-top: 200px;
+}
+.main_page_block3 .block_heading{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.main_page_block3 .block_content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* text-align: center; */
+}
+.block3_item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main_page_block4{
+    margin-top: 100px;
+}
+.main_page_block4 .block_heading{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.input{
+    /* margin-right: 20px; */
+}
+
+.main_page_block5{
+    background-color: #333E7B;
+    color: #FFFFFF;
+    margin-top: 100px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.main_page_block5 .block_heading{
+    width: 700px;
+    margin-bottom: 50px;
+}
+.main_page_block5 .block_heading h1{
+    margin-bottom: 30px;
+}
+.main_page_block5 div{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+}
+.main_page_block5 .row{
+    /* width: 100%;
+    justify-content: center; */
+
+    display: flex;
+    justify-content: space-between;
+    min-width: 546px;
+
+}
+.main_page_block5 .row2{
+    width: 100%;
+    justify-content: flex-end;
+}
+.main_page_block5 .block_content{
+    /* position: relative; */
+    width: 50vw;
+}
+.main_page_block5 .input, .main_page_block5 .button{
+    width: 32%;
+    min-width: 160px;
+}
+.main_page_block5 .personal_data{
+    margin-top: 20px;
+    width: 320px;
+    margin-right: 0;
+    text-align: start;
+}
+.main_page_block6{
+    padding: 100px 200px;
+}
+.main_page_block6 .block_heading{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.main_page_block6 .block_content{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+.main_page_block7{
+    padding-bottom: 100px;
+}
+
+.main_page_block7 .block_heading{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.main_page_block7 .row1{
+    margin-bottom: 50px;
+}
+.main_page_block7 .numbers{
+    position: relative;
+    height: 209px;
+}
+.main_page_block7 .number_img{
+    /* height: 209px; */
+    position: absolute;
+}
+.main_page_block7 .input input{
+    border: #333E7B solid 1px;
+    height: 100%;
+    width: 237px;
+    border-radius: 4px;
+}
+.main_page_block7 .row2{
+    justify-content: space-around;
+}
+.main_page_block7 .row3{
+    width: 100%;
+    justify-content: flex-end;
+}
+.main_page_block7 .personal_data{
+    margin-top: 20px;
+    width: 320px;
+    text-align: start;
+}
+
 @media (max-width:900px) {
     /* //цены на услуги */
     .h1{
