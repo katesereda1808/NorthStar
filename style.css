@@ -53,6 +53,7 @@ button{
     font-size: 16px;
     /* /// */
     width: 237px;
+    min-width: 180px;
     height: 44px;
     border-radius: 4px;
 }
@@ -93,6 +94,9 @@ button{
     flex-direction: row;
     padding-top: 20px;
     padding-bottom: 20px;
+}
+.header_brands::-webkit-scrollbar{
+    width: 0;
 }
 .arrow_right img{
     transform: rotate(180deg);
@@ -136,7 +140,7 @@ button{
     display: flex;
     flex-direction: row;
     color: #FFFFFF;
-    margin-right: 50px;
+    /* margin-right: 20px; */
     
 }
 .main_navbar_item{
@@ -147,6 +151,7 @@ button{
     flex-direction: row;
     justify-content: space-between;
     width: 125px;
+    margin-right: 20px;
 }
 
 .header_btn{
@@ -170,6 +175,9 @@ button{
     justify-content: space-between;
     padding-top: 60px;
     padding-bottom: 60px;
+}
+.footer_mobile{
+    display: none;
 }
 .footer a{
     color: #FFFFFF;
@@ -328,6 +336,7 @@ button{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 30px;
 }
 .main_page_block4{
     margin-top: 100px;
@@ -392,7 +401,7 @@ button{
     text-align: start;
 }
 .main_page_block6{
-    padding: 100px 200px;
+    padding: 100px 100px;
 }
 .main_page_block6 .block_heading{
     width: 100%;
@@ -415,10 +424,16 @@ button{
 }
 .main_page_block7 .row1{
     margin-bottom: 50px;
+    justify-content: space-around;
 }
 .main_page_block7 .numbers{
     position: relative;
     height: 209px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 .main_page_block7 .number_img{
     /* height: 209px; */
@@ -427,7 +442,8 @@ button{
 .main_page_block7 .input input{
     border: #333E7B solid 1px;
     height: 100%;
-    width: 237px;
+    width: 20vw;
+    margin-right: 20px;
     border-radius: 4px;
 }
 .main_page_block7 .row2{
@@ -449,8 +465,8 @@ button{
 @media (max-width:900px) {
     /* //цены на услуги */
     .block{
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
     .header_logo{
         display: none;
@@ -464,7 +480,19 @@ button{
     .header_socials, .header_btn, .header_main_navbar{
         display: none;
     }
-
+    .header_main_colomn{
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .header_main_colomn2_address{
+        margin-right: 0;
+        margin-left: 30px;
+    }
+    .header_contacts{
+        margin-bottom: 10px;
+    }
     .main_page_block1 .text{
         align-items: center;
         position: relative;
@@ -472,7 +500,7 @@ button{
         left: 0;
     }
     .main_page_block1_img{
-        /* position: relative; */
+        position: relative;
         width: 100%;
         /* /// padding */
     }
@@ -527,17 +555,52 @@ button{
     .main_page_block7 .row{
         flex-direction: column;
     }
-    .main_page_block7 .input input {
+    .main_page_block7 .row1{
+        align-items: center;
+    }
+    .main_page_block7 .personal_data{
+        align-self: flex-start;
+    }
+    .main_page_block7 .input input, .main_page_block7 .button {
         height: 44px;
         margin-bottom: 20px;
         width: 100%;
+        /* width: 80vw; */
+        min-width: 200px;
     }
-    .main_page_block7 .button{
+    /* .main_page_block7 .button{
         width: 100%;
+    } */
+    .footer_desktop{
+        display: none;
+    }
+    .footer_mobile{
+        display: flex;
     }
     .footer{
+        flex-direction: column;
+        
+        /* display: block; */
+
+    }
+    .footer_mobile_logo img{
+        width: 100%;
+    }
+    .footer_mobile_nav{
         display: flex;
         flex-direction: column;
+        flex-wrap: wrap;
+        height: 200px;
+        margin-top: 50px;
+    }
+    .footer_map img{
+        width: 100%;
+    }
+    .footer_mobile_nav a{
+        margin-bottom: 20px;
+    }
+    .footer_socials a{
+        margin-right: 15px;
     }
     .h1{
     font-weight: 600;
@@ -563,5 +626,8 @@ button{
     font-weight: 600;
     font-size: 16px;
     }
+
+}
+@media (max-width:1152px) {
 
 }
