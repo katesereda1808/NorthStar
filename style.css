@@ -492,7 +492,9 @@ h2{
         right: 0px;
         top: 0px;
         width: 100vw;
+        /* width: 100%; */
         height: 100vh;
+        padding-left: 70px;
     }
     .navbar_header{
         font-size: 16px;
@@ -502,10 +504,15 @@ h2{
         flex-direction: row;
         justify-content: flex-end;
     }
+    .navbar_content{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
     .navbar_content a{
         color: #FFFFFF;
     }
     .main_navbar_item{
+        margin-right: 0;
         display: flex;
         align-items: center;
         height: 50px;
@@ -516,6 +523,8 @@ h2{
     }
     .burger_close{
         background-color: transparent;
+        margin-top: 30px;
+        margin-bottom: 70px;
     }
     .header_main_colomn2_phone{
         display: none;
