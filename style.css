@@ -48,7 +48,7 @@ h2{
     font-size: 14px;
 }
 /* малярные работы кнопка */
-button{
+.button{
     font-weight: 600;
     font-size: 16px;
     /* /// */
@@ -141,7 +141,9 @@ button{
     flex-direction: row;
     color: #FFFFFF;
     /* margin-right: 20px; */
-    
+}
+.header_main_navbar a{
+    color: #FFFFFF;
 }
 .main_navbar_item{
     margin-right: 30px;
@@ -458,7 +460,7 @@ button{
     width: 320px;
     text-align: start;
 }
-.block2_btn .mobile{
+.mobile{
     display: none;
 }
 
@@ -470,6 +472,50 @@ button{
     }
     .header_logo{
         display: none;
+    }
+    .menu_btn_mobile{
+        width: auto;
+        height: auto;
+        background-color: transparent;
+    }
+    .mobile{
+        display: block;
+    }
+    .hidden{
+        display: none;
+    }
+    .header_navbar_mobile{
+        color: #FFFFFF;
+        background-color: #333E7B;
+        position: absolute;
+        z-index: 3;
+        right: 0px;
+        top: 0px;
+        width: 100vw;
+        height: 100vh;
+    }
+    .navbar_header{
+        font-size: 16px;
+        font-weight: 600;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    .navbar_content a{
+        color: #FFFFFF;
+    }
+    .main_navbar_item{
+        display: flex;
+        align-items: center;
+        height: 50px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.582);
+    }
+    .navbar_content .last{
+        border-bottom: none;
+    }
+    .burger_close{
+        background-color: transparent;
     }
     .header_main_colomn2_phone{
         display: none;
@@ -622,7 +668,7 @@ button{
     font-size: 14px;
     }
 /* малярные работы кнопка */
-    button{
+    .button{
     font-weight: 600;
     font-size: 16px;
     }

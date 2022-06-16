@@ -12,7 +12,7 @@
 </head>
 <body>
     <div class="container">
-        <div class="header">
+        <header class="header">
             <div class="header_top block">
                 <div class="arrow_left">
                     <img src="./images/chevron.svg" alt="">
@@ -71,13 +71,64 @@
                 </div>
             </div>
             <div class="header_bottom block">
+                <button class="menu_btn_mobile mobile">
+                    <img src="./images/menu_mobile.svg" alt="">
+                </button>
+                <!-- ////// mobile menu -->
+                <nav class="header_navbar_mobile mobile hidden">
+                    <div class="navbar_header">
+                        <button class="burger_close">
+                            <img src="./images/cross.svg" alt="">
+                        </button>
+                    </div>
+                    <div class="navbar_content">
+                        <a href="#services">
+                            <div class="main_navbar_item">Услуги</div>
+                        </a>
+                        <a href="#about">
+                            <div class="main_navbar_item">О нас</div>
+                        </a>
+                        <a href="#promo">
+                            <div class="main_navbar_item">Акции</div>
+                        </a>
+                        <a href="#articles">
+                            <div class="main_navbar_item">Статьи</div>
+                        </a>
+                        <a href="#reviews">
+                            <div class="main_navbar_item">Отзывы</div>
+                        </a>
+                        <a href="#contacts">
+                            <div class="main_navbar_item last">Контакты</div>
+                        </a>
+                    </div>
+                </nav>
+                <!-- ////// -->
+                <div class="header_logo_mobile mobile">
+                    <img src="./images/north_star_logo_white.svg" alt="">
+                </div>
+
+                <a href="tel:+7(945)421-08-55" class="phone_icon mobile">
+                    <img src="./images/phone_icon_white.svg" alt="">
+                </a>
                 <nav class="header_main_navbar">
-                    <div class="main_navbar_item">Услуги</div>
-                    <div class="main_navbar_item">О нас</div>
-                    <div class="main_navbar_item">Акции</div>
-                    <div class="main_navbar_item">Статьи</div>
-                    <div class="main_navbar_item">Отзывы</div>
-                    <div class="main_navbar_item">Контакты</div>
+                    <a href="#services">
+                        <div class="main_navbar_item">Услуги</div>
+                    </a>
+                    <a href="#about">
+                        <div class="main_navbar_item">О нас</div>
+                    </a>
+                    <a href="#promo">
+                        <div class="main_navbar_item">Акции</div>
+                    </a>
+                    <a href="#articles">
+                        <div class="main_navbar_item">Статьи</div>
+                    </a>
+                    <a href="#reviews">
+                        <div class="main_navbar_item">Отзывы</div>
+                    </a>
+                    <a href="#contacts">
+                        <div class="main_navbar_item">Контакты</div>
+                    </a>
                 </nav>
                 <div class="header_socials">
                     <div class="header_socials_item">
@@ -93,16 +144,16 @@
                         <img src="./images/vk.svg" alt="">
                     </div>
                 </div>
-                <button class="header_btn">
+                <button class="button header_btn">
                     Оставить заявку
                 </button>
             </div>
-        </div>
+        </header>
 
 
         <div class="page_content main_page">
             <div class=" main_page_block1">
-                <div class="text block">
+                <div class="text">
                     <h1>
                         Автотехцентр “Северная звезда” <br>
                         в Ясенево
@@ -112,13 +163,13 @@
                         <li> <img src="./images/check.svg" alt="">  специалисты</li>
                         <li> <img src="./images/check.svg" alt="">Гарантия качества</li>
                     </ul>
-                    <button class="block1_btn">Оставить заявку</button>
+                    <button class="button block1_btn">Оставить заявку</button>
                     <a href="#services">Смотреть услуги</a>
                     
                 </div>
                 <img class="main_page_block1_img" src="./images/main_page_car.png" alt="">
             </div>
-            <!-- <img class="main_page_block1_img" src="./images/main_page_car.png" alt=""> -->
+            
             <div class="block main_page_block2">
                 <div class="block_heading">
                     <h1>
@@ -142,7 +193,7 @@
                             
                      
                         
-                        <button class="block2_btn desktop">
+                        <button class="button block2_btn desktop">
                             Оставить заявку
                         </button>
     
@@ -197,7 +248,7 @@
                                     <p>от 400 рублей</p>
                                 </li>
                             </a>
-                            <!-- <button class="block2_btn mobile">
+                            <!-- <button class="button block2_btn mobile">
                                 Оставить заявку
                             </button> -->
                         </ul>
@@ -535,5 +586,6 @@
             
         </footer>
     </div>
+    <script src="./script.js"></script>
 </body>
 </html>
