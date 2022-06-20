@@ -104,11 +104,12 @@ h2{
 .header_main{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     padding-top: 20px;
     padding-bottom: 20px;
 }
 .header_main_colomn{
-    width: 50%;
+    /* width: 50%; */
 }
 .header_main_colomn2{
     /* display: flex;
@@ -125,7 +126,11 @@ h2{
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 160px;
+    /* width: 160px; */
+    margin-bottom: 15px;
+}
+.header_contacts img{
+    margin-right: 10px;
 }
 .header_bottom{
     background-color: #333E7B;
@@ -497,6 +502,16 @@ h2{
 .slider_content img{
     margin-right: 20px;
 }
+.about_page_block1 .block_heading{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    /* width: 40vw; */
+}
+.about_page_block1 .block_heading h1{
+     width: 50vw;
+     min-width: 345px;
+}
 .about_page_block1 .text{
     margin-top: 50px;
 }
@@ -507,23 +522,166 @@ h2{
 .about_page_block2{
     background-color: #333E7B;
     color: #FFFFFF;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 .about_page_block2 .block_heading{
     text-align: center;
+    margin-bottom: 30px;
+    /* display: flex;
+    flex-direction: ;
+    justify-content: center; */
 }
-.about_page_block2 .cards{
+/* .about_page_block2  */
+.cards{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     margin-right: -50px;
 }
-.about_page_block2 .card{
+/* .about_page_block2  */
+.card{
     margin-right: 50px;
+    margin-bottom: 50px;
+}
+.about_page_block2 .card p{
+    margin-top: 8px;
+    opacity: 0.6;
+}
+.about_page_block2 .card .emphasize{
+    color: rgb(255, 255, 255);
+    opacity: 100%;
+}
+.about_page_block2 .card img{
+    margin-bottom: 10px;
+}
+.about_page_block3{
+    padding-top: 100px;
+    padding-bottom: 80px;
+}
+.about_page_block3 .block_heading{
+    text-align: center;
+    margin-bottom: 30px;
+}
+/* .about_page_block3  */
+table{
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 8px;
+}
+/* tbody:first-child{
+    border-top: transparent;
+} */
+/* .about_page_block3  */
+thead{
+    color: #FFFFFF;
+    background-color: #333E7B;
+    font-size: 18px;
+    font-weight: 500;
+}
+/* .about_page_block3  */
+tr{
+    height: 50px;
+}
+/* .about_page_block3 th, .about_page_block3 td */
+td, th
+{
+    padding: 10px 20px 10px 20px;
+}
+/* .about_page_block3  */
+td{
+    font-size: 14px;
+    font-weight: 500;
+    background-color: #3440790A;
+    border-top: 1px solid #333E7B;
+}
+.site{
+    text-align: center;
+}
+.inn{
+    text-align: end;
+    
+}
+/* ////// цены на услуги */
+.prices_page .block_content{
+    font-size: 14px;
+    font-weight: 500;
+}
+.prices_page .block_heading{
+    margin-top: 80px;
+    margin-bottom: 50px;
+    color: #333E7B;
+    text-align: center;
+}
+.prices_services_list{
+    width: 100%;
+    overflow-x: scroll;
+
+}
+.prices_services_list::-webkit-scrollbar{
+    width: 0;
+}
+.prices_services_list ul{
+    display: flex;
+    flex-direction: row;
+    
+}
+.prices_services_list li{
+    background-color: #F0F0F0;
+    color: #344179;
+    padding: 5px 10px 5px 10px;
+    border-radius: 19px;
+    margin-right: 20px;
+    width: auto;
+    white-space: nowrap;
+}
+.prices_services_list li .chosen{
+    background-color: #344179;
+    color: #FFFFFF;
+}
+.table_oil{
+    margin-bottom: 100px;
 }
 
+
+
+.faded{
+    opacity: 0.5;
+}
+.card_heading{
+    color: #333E7B;
+}
+.promotions_page .block_heading{
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    color: #333E7B;
+}
+.promo_cards{
+    margin-bottom: 100px;
+}
+
+
+
+/* // статьи */
+.articles_page_block1 .block_heading{
+    color: #333E7B;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+.article_card{
+    width: 400px;
+}
+
+.article_card a{
+    font-weight: 600;
+    color: #000;
+}
+
+
 @media (max-width:900px) {
-    /* //цены на услуги */
     .block{
         padding-left: 10px;
         padding-right: 10px;
@@ -684,6 +842,8 @@ h2{
     /* .main_page_block7 .button{
         width: 100%;
     } */
+    /* /////// цены на услуги */
+
     .footer_desktop{
         display: none;
     }
