@@ -285,6 +285,7 @@ h2{
     background-color: #FFFFFF;
     color: #000;
     margin-top: 100px;
+    padding-bottom: 100px;
 
     /* flex-direction: row;
     justify-content: space-between; */
@@ -326,7 +327,7 @@ h2{
     background-color: #D31313;
 }
 .main_page_block3{
-    margin-top: 200px;
+    margin-top: 100px;
 }
 .main_page_block3 .block_heading{
     width: 100%;
@@ -419,6 +420,12 @@ h2{
     display: flex;
     flex-direction: row;
     position: relative;
+}
+.main_page_block6 .block_content .column1{
+    width: 50%;
+}
+.main_page_block6 .block_content .column1 h2{
+    width: 22.143vw;
 }
 .main_page_block7{
     padding-bottom: 100px;
@@ -537,13 +544,15 @@ h2{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     margin-right: -50px;
 }
 /* .about_page_block2  */
 .card{
-    margin-right: 50px;
+    /* margin-right: 50px; */
     margin-bottom: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 .about_page_block2 .card p{
     margin-top: 8px;
@@ -673,13 +682,188 @@ td{
 }
 .article_card{
     width: 400px;
+    margin-right: 0;
 }
-
+.card_img{
+    width: 100%;
+}
 .article_card a{
     font-weight: 600;
     color: #000;
 }
+.article_card .read_more{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.article_card .read_more img{
+    margin-left: 10px;
+}
 
+/* // статья */
+.article_page_block1 .block_heading{
+    margin-top: 100px;
+    margin-bottom: 50px;
+    text-align: center;
+    color: #333E7B;
+}
+.article_page_block2{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.article_page_block2 .block_heading{
+    /* margin-top:50px; */
+    margin-bottom: 50px;
+}
+.article_images{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-right: -30px;
+}
+.article_images img{
+    height: 416px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+.read_also{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.read_also .card{
+    width: 30vw;
+}
+
+/* // отзывы */
+.reviews_page_block1{
+    padding-bottom: 100px;
+}
+.reviews_page_block1 .block_heading{
+    color: #333E7B;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+.reviews_cards{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-right: -30px;
+}
+.reviews_card{
+    padding: 20px 20px 20px 20px;
+    background-color:#3440790a;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    width: 38.857vw;
+    min-width: 250px;
+    max-width: 614px;
+    margin-right: 30px;
+}
+.reviews_card_header{
+    display: flex;
+    flex-direction: row;
+    height: 80px;
+    margin-bottom: 10px;
+}
+.reviews_card_profile_img{
+    height: 100%;
+    margin-right: 10px;
+}
+.reviews_card_info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.reviews_card_author{
+    font-size: 18px;
+    font-weight: 500;
+}
+.reviews_card_text{
+    font-size: 14px;
+    font-weight: 500;
+}
+.reviews_card_date{
+    font-size: 14px;
+    font-weight: 500;
+    opacity: 0.5;
+}
+.buttons{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+.download_button{
+    margin-top: 20px;
+    background-color: transparent;
+}
+
+
+
+
+
+
+
+
+
+
+/* ////// бренды */
+.brands_page .block_heading{
+    color: #333E7B;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+.choose_brand{
+    display: flex;
+    flex-direction: row;
+}
+.alphabet{
+    width: 70vw;
+}
+.choose_brand input{
+    border: 2px solid #34407980;
+    background-color: #3440790a;
+    border-radius: 4px;
+    margin-right: 30px;
+}
+
+
+/* ///// хонда */
+.maintenance_page .block_heading{
+    margin-top: 100px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.honda_service{
+    background-color: #333e7a0a;
+    width: 25vw;
+    min-width: 230px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    border-radius: 8px;
+    padding-bottom: 30px;
+}
+.honda_service p{
+    text-align: center;
+    width: 17.286vw;
+    min-width: 100px;
+    border-radius: 8px;
+}
+.maintenance_page_block1 .block_content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.maintenance_page_block2{
+    padding-bottom: 100px;
+}
 
 @media (max-width:900px) {
     .block{
@@ -819,6 +1003,9 @@ td{
     .main_page_block6 .block_content{
         flex-direction: column;
     }
+    .main_page_block6 .block_content .column1, .main_page_block6 .block_content .column1 h2{
+        width: 100%;
+    }
     .main_page_block6 h2{
         text-align: center;
         margin-bottom: 50px;
@@ -887,20 +1074,61 @@ td{
     font-weight: 600;
     font-size: 24px;
     } */
-/* диагностика системы впрыска */
     .p1{
     font-weight: 600;
     font-size: 14px;
     }
-/* малярные работы */
     .p2{
     font-weight: 500;
     font-size: 14px;
     }
-/* малярные работы кнопка */
     .button{
     font-weight: 600;
     font-size: 16px;
+    }
+
+    /* // статьи */
+    .cards{
+    justify-content: center;
+    margin-right: 0px;
+    }
+    /* // статья */
+    .article_page_block1 .block_heading h1, .article_page_block2 .block_heading{
+        font-size: 24px;
+        text-align: center;
+    }
+    .article_images{
+        /* display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 50px; */
+        margin-right: 0px;
+    }
+    .article_images img{
+        height: auto;
+        width: 100%;
+        margin-right: 0px;
+        
+    }
+    .read_also{
+        flex-direction: column;
+        align-items: center;
+    }
+    .read_also .card{
+        width: 100%;
+    }
+    /* ///// хонда */
+    .maintenance_page_block1 .block_content{
+        flex-direction: column;
+        align-items: center;
+    }
+    .honda_service{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .honda_service p{
+        width: 300px;
     }
 
 }
