@@ -61,6 +61,10 @@ h2{
     background-color: #D31313;
     color: #FFFFFF;
 }
+.blue_button{
+    background-color: #333E7B;
+    color: #FFFFFF;
+}
 .blue_emphasize{
     font-size: 40px;
     font-weight: 600;
@@ -139,7 +143,6 @@ h2{
     justify-content: space-between;
     align-items: center;
     height: 100px;
-
 }
 .header_main_navbar{
     display: flex;
@@ -698,7 +701,7 @@ td{
     margin-bottom: 50px;
 }
 .article_card{
-    width: 400px;
+    width: 380px;
     margin-right: 0;
 }
 .card_img{
@@ -723,6 +726,9 @@ td{
     margin-bottom: 50px;
     text-align: center;
     color: #333E7B;
+}
+.article_page_block1 .text p{
+    margin-bottom: 30px;
 }
 .article_page_block2{
     padding-top: 100px;
@@ -820,7 +826,123 @@ td{
 }
 
 
-
+/* // контакты */
+.contacts_page_block1{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.contacts_page_block1 .block_heading{
+    margin-bottom: 50px;
+    color: #333E7B;
+    text-align: center;
+}
+.contacts_navbar{
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    margin-bottom: 40px;
+}
+.contacts_navbar::-webkit-scrollbar{
+    width: 0px;
+}
+.contacts_navbar a{
+    background-color: #F0F0F0;
+    color: #333E7B;
+    border-radius: 19px;
+    padding: 3px 10px;
+    margin-right: 15px;
+    white-space: nowrap;
+}
+.contacts_navbar .chosen{
+    background-color: #333E7B;
+    color: #F0F0F0;
+}
+.contacts_map{
+    width: 682px;
+}
+.contacts_map img{
+    width: 100%;
+}
+.contacts_page_block1 .block_content{
+    display: flex;
+    flex-direction: row;
+}
+.contacts_info{
+    padding-left: 30px;
+}
+.contacts_info_item{
+    margin-bottom: 30px;
+}
+.contacts_info_item .item_heading{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: #344079;
+    margin-bottom: 20px;
+}
+.contacts_info_item .item_heading h2{
+    margin-left: 10px;
+}
+.contacts_info_item .item_text{
+    padding-left: 35px;
+}
+.contacts_info_item .item_text, .contacts_info_item .item_text p{
+    margin-bottom: 10px;
+}
+.contacts_info_buttons{
+    display: flex;
+    flex-direction: column;
+    padding-left: 35px;
+}
+.contacts_info_buttons .button{
+    margin-bottom: 15px;
+}
+/* // реквизиты */
+.contacts_page_block1 .block_content{
+    display: flex;
+    flex-direction: column;
+}
+.contacts_page_block1 .columns{
+    display: flex;
+    flex-direction: row;
+}
+.contacts_page_block1 .column{
+    width: 50%;
+    padding-right: 50px;
+}
+.contacts_page_block1 .column p{
+    margin-bottom: 20px;
+}
+.contacts_page_block1 .name{
+    margin-bottom: 50px;
+    width: 100%;
+}
+/* // сертификаты */
+.certificates{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.certificates_item .download_btn{
+    font-size: 16px;
+    font-weight: 600;
+    color: #344079;
+    background-color: transparent;
+    margin-top: 15px;
+}
+.certificates_item{
+    width: 370px;
+}
+.certificate_preview{
+    width: 100%;
+    height: 450px;
+    background-color: #C4C4C4;
+    margin-bottom: 15px;
+}
 
 
 
@@ -859,12 +981,31 @@ td{
 .alphabet{
     width: 70vw;
 }
-.choose_brand input{
+.choose_brand .input_area{
     border: 2px solid #34407980;
     background-color: #3440790a;
+    display: flex;
+    flex-direction: row;
     border-radius: 4px;
     margin-right: 30px;
+    padding: 5px 10px;
+    align-items: center;
+    height: 25px;
+    /* box-sizing: border-box;
+    overflow: hidden; */
 }
+.choose_brand .input_area .loupe{
+    height: 14.5px;
+}
+.choose_brand .input_area input{
+    background-color: transparent;
+    margin-left: 10px;
+    outline: none;
+}
+.choose_brand .input_area input::placeholder{
+    color: #34407980;
+}
+
 
 
 /* ///// хонда */
@@ -1151,6 +1292,47 @@ td{
     }
     .read_also .card{
         width: 100%;
+    }
+    /* // контакты */
+    .contacts_page_block1 .block_content{
+        flex-direction: column;
+    }
+    .contacts_map{
+        width: 100%;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+    .contacts_info_buttons{
+        padding-left: 0;
+    }
+    .contacts_info{
+        padding-left: 0;
+    }
+    .contacts_info_buttons .button{
+        width: 100%;
+    }
+    .contacts_page_block1 .columns{
+        flex-direction: column;
+    }
+    .contacts_page_block1 .column {
+        width: 100%;
+        padding-right: 0px;
+    }
+    /* // реквизиты */
+    .certificates {
+        flex-direction: column;
+        align-items: center;
+    }
+    .certificates_item{
+        margin-bottom: 50px;
+    }
+
+    /* // бренды */
+    .choose_brand .input_area{
+        width: 100%;
+    }
+    .alphabet{
+        display: none;
     }
     /* ///// хонда */
     .maintenance_page_block1 .block_content{
