@@ -573,6 +573,24 @@ h2{
     text-align: center;
     margin-bottom: 30px;
 }
+.about_page_block3 .block_content{
+    overflow-x: scroll;
+    padding-bottom: 15px;
+}
+.about_page_block3 .block_content::-webkit-scrollbar{
+    width: 30px;
+}
+.about_page_block3 .block_content::-webkit-scrollbar-track {
+    background: #3440790A;
+    border-radius: 9px;
+}
+.about_page_block3 .block_content::-webkit-scrollbar-thumb {
+    height: fit-content;
+    /* width: 50px; */
+    background-color: #333E7B;
+    border-radius: 9px;
+}
+
 /* .about_page_block3  */
 table{
     width: 100%;
