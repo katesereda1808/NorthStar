@@ -573,7 +573,7 @@ h2{
     text-align: center;
     margin-bottom: 30px;
 }
-.about_page_block3 .block_content{
+/* .about_page_block3 .block_content{
     overflow-x: scroll;
     padding-bottom: 15px;
 }
@@ -586,10 +586,9 @@ h2{
 }
 .about_page_block3 .block_content::-webkit-scrollbar-thumb {
     height: fit-content;
-    /* width: 50px; */
     background-color: #333E7B;
     border-radius: 9px;
-}
+} */
 
 /* .about_page_block3  */
 table{
@@ -830,6 +829,9 @@ td{
 
 
 /* ////// бренды */
+.brands_page_block1{
+    padding-bottom: 100px;
+}
 .brands_page .block_heading{
     color: #333E7B;
     text-align: center;
@@ -839,6 +841,20 @@ td{
 .choose_brand{
     display: flex;
     flex-direction: row;
+    margin-bottom: 50px;
+}
+.brands_list table td{
+    border-top: 0px;
+}
+.alphabet a{
+    color: #34407981;
+    opacity: 0.5;
+}
+.alphabet .choose_brand_chosen{
+    opacity: 1;
+}
+.brands_list table td a{
+    color: #000;
 }
 .alphabet{
     width: 70vw;
@@ -1151,5 +1167,24 @@ td{
 
 }
 @media (max-width:1152px) {
+
+}
+@media (max-width:570px) {
+    .about_page_block3 .block_content{
+        overflow-x: scroll;
+        padding-bottom: 15px;
+    }
+    .about_page_block3 .block_content::-webkit-scrollbar{
+        width: 30px;
+    }
+    .about_page_block3 .block_content::-webkit-scrollbar-track {
+        background: #3440790A;
+        border-radius: 9px;
+    }
+    .about_page_block3 .block_content::-webkit-scrollbar-thumb {
+        height: fit-content;
+        background-color: #333E7B;
+        border-radius: 9px;
+    }
 
 }
