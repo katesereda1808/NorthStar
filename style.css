@@ -263,9 +263,11 @@ h2{
 .main_page_block1 .buttons{
     align-items: flex-start;
 }
+.buttons a{
+    margin-top: 30px;
+}
 .main_page_block1 a{
     color: #000;
-    margin-top: 30px;
 }
 .main_page_block1_img{
     margin-right: -100px;
@@ -836,7 +838,7 @@ td{
     flex-direction: column;
     align-items: center;
 }
-/* .mobile_buttons a{
+/* .buttons .mobile a{
     justify-content: center;
     align-items: center;
 } */
@@ -1087,6 +1089,7 @@ td{
     }
     .buttons button, .buttons a{
         width: 100%;
+        text-align: center;
     }
     .block{
         padding-left: 10px;
@@ -1101,7 +1104,7 @@ td{
         background-color: transparent;
     }
     .mobile{
-        display: block;
+        display: flex;
     }
     .hidden{
         display: none;
