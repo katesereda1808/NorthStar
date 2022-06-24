@@ -21,6 +21,9 @@ a{
 li{
     list-style: none;
 }
+.new_year{
+    width: 100%;
+}
 .block{
     /* padding: 59px 200px; */
     padding-left: 100px;
@@ -257,6 +260,9 @@ h2{
     justify-content: flex-end;
     margin-top: 100px;
 }
+.main_page_block1 .buttons{
+    align-items: flex-start;
+}
 .main_page_block1 a{
     color: #000;
     margin-top: 30px;
@@ -478,7 +484,17 @@ h2{
 .mobile{
     display: none;
 }
+.navigation_chevron{
+    margin: 0 10px 0 10px;
+}
 /* //////////// */
+.navigation{
+    opacity: 0.5;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 30px;
+}
 .about_page_block1{
     padding-top: 100px;
     padding-bottom: 100px;
@@ -820,6 +836,10 @@ td{
     flex-direction: column;
     align-items: center;
 }
+/* .mobile_buttons a{
+    justify-content: center;
+    align-items: center;
+} */
 .download_button{
     margin-top: 20px;
     background-color: transparent;
@@ -938,7 +958,7 @@ td{
     width: 370px;
 }
 .certificate_preview{
-    width: 100%;
+    width: 375px;
     height: 450px;
     background-color: #C4C4C4;
     margin-bottom: 15px;
@@ -965,9 +985,9 @@ td{
     flex-direction: row;
     margin-bottom: 50px;
 }
-.brands_list table td{
+/* .brands_list table td{
     border-top: 0px;
-}
+} */
 .alphabet a{
     color: #34407981;
     opacity: 0.5;
@@ -975,8 +995,21 @@ td{
 .alphabet .choose_brand_chosen{
     opacity: 1;
 }
-.brands_list table td a{
+.brands_list{
+    display: flex;
+    flex-direction: row;
+    background-color: #3440790A;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.brands_list a{
     color: #000;
+    font-size: 14px;
+    font-weight: 500;
+    
+}
+.brands_list li {
+    padding: 10px 20px 10px 20px;
 }
 .alphabet{
     width: 70vw;
@@ -1039,8 +1072,22 @@ td{
 .maintenance_page_block2{
     padding-bottom: 100px;
 }
+.mobile{
+    display: none;
+}
 
 @media (max-width:900px) {
+    .desktop{
+        display: none;
+        opacity: 0;
+    }
+    .mobile{
+        display: block;
+        /* display: flex; */
+    }
+    .buttons button, .buttons a{
+        width: 100%;
+    }
     .block{
         padding-left: 10px;
         padding-right: 10px;
@@ -1128,6 +1175,8 @@ td{
         position: relative;
         text-align: center;
         left: 0;
+        padding-left: 10px;
+        padding-right: 10px;
     }
     .main_page_block1_img{
         position: relative;
@@ -1140,6 +1189,10 @@ td{
     }
     .main_page_block2 .column2{
         width: 100%;
+        z-index: 3;
+    }
+    .main_page_block1_img{
+        margin-top: 50px;
     }
     .main_page_block2 .block_content, .main_page_block3 .block_content{
         flex-direction: column;
@@ -1320,11 +1373,43 @@ td{
     }
     /* // реквизиты */
     .certificates {
-        flex-direction: column;
+        /* flex-direction: column; */
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
         align-items: center;
     }
+    .certificates::-webkit-scrollbar{
+        width: 0;
+    }
     .certificates_item{
+        margin-right: 50px;
         margin-bottom: 50px;
+    }
+    .dots {
+        display: flex;
+        /* background-color: deeppink; */
+        margin-bottom: 50px;
+        align-items: center;
+        z-index: 3;
+        justify-content: center;
+        margin-right: -20px;
+    }
+    .dot{
+        display: inline-block;
+        opacity: 1;
+        width: 8px;
+        height: 8px;
+        background-color: #DADADA;
+        border-radius: 100%;
+        margin-right: 10px;
+        
+    }
+    .dot_chosen{
+        width: 10px;
+        height: 10px;
+        background-color: #34407966;
     }
 
     /* // бренды */
@@ -1348,9 +1433,9 @@ td{
     }
 
 }
-@media (max-width:1152px) {
+/* @media (max-width:1152px) {
 
-}
+} */
 @media (max-width:570px) {
     .about_page_block3 .block_content{
         overflow-x: scroll;
