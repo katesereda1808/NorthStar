@@ -529,11 +529,11 @@ h2{
 }
 .about_slider{
     display: flex;
-    flex-direction: row;
-    padding-right: 50px;
-    padding-left: 50px;
+    flex-direction: column;
+    /* padding-right: 50px;
+    padding-left: 50px; */
 }
-.slider_chevon{
+/* .slider_chevon{
     width: 50px;
     display: flex;
     flex-direction: column;
@@ -544,14 +544,21 @@ h2{
 }
 .slider_chevon img{
     height: 8px;
-}
+} */
 .slider_content{
     display: flex;
     flex-direction: row;
     overflow-x: scroll;
 }
-.slider_content img{
+.slider_content::-webkit-scrollbar{
+    width: 0;
+}
+.slider_content .slide{
     margin-right: 20px;
+}
+.slider_content .shown{
+    width: 100%;
+    margin-right: 0;
 }
 .about_page_block1 .block_heading{
     text-align: center;
@@ -589,6 +596,7 @@ h2{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    /* justify-content: space-around; */
     margin-right: -50px;
 }
 /* .about_page_block2  */
@@ -640,6 +648,39 @@ table{
     border-collapse: collapse;
     border-radius: 8px;
 }
+.table_services, .table_oil{
+    flex-direction: column;
+    border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -khtml-border-radius: 8px;
+  border: 1px solid #3440790A;
+  /* display: block;
+  display: grid; */
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  overflow: hidden;
+  min-width: 350px;
+}
+/* .table_services  tbody, .table_oil tbody{
+    width: 100%;
+} */
+.table_services tr{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.table_services tr, .table_oil tr{
+    background-color: #3440790A;
+    border-top: 1px solid #333e7b;
+}
+.table_services tr:first-child{
+    border-top: none;
+}
+.td_price{
+    white-space: nowrap;
+}
 /* tbody:first-child{
     border-top: transparent;
 } */
@@ -652,19 +693,19 @@ thead{
 }
 /* .about_page_block3  */
 tr{
-    height: 50px;
+    min-height: 50px;
 }
 /* .about_page_block3 th, .about_page_block3 td */
 td, th
 {
-    padding: 10px 20px 10px 20px;
+    padding: 30px 20px 30px 20px;
 }
 /* .about_page_block3  */
 td{
     font-size: 14px;
     font-weight: 500;
-    background-color: #3440790A;
-    border-top: 1px solid #333E7B;
+    /* background-color: #3440790A;
+    border-top: 1px solid #333E7B; */
 }
 .site{
     text-align: center;
@@ -685,17 +726,28 @@ td{
     text-align: center;
 }
 .prices_services_list{
-    width: 100%;
-    overflow-x: scroll;
-
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
-.prices_services_list::-webkit-scrollbar{
+.prices_services_list .arrow{
+    transform: rotate(180deg);
+    justify-content: space-between;
+    margin-top: -15px;
+    margin-left: 15px;
+}
+.prices_services_list ul{
+    /* width: 80%; */
+    overflow-x: scroll;
+}
+.prices_services_list ul::-webkit-scrollbar{
     width: 0;
 }
 .prices_services_list ul{
     display: flex;
     flex-direction: row;
-    
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
 .prices_services_list li{
     background-color: #F0F0F0;
@@ -713,14 +765,39 @@ td{
 .table_oil{
     margin-bottom: 100px;
 }
-
-
-
-.faded{
-    opacity: 0.5;
+/* .table_oil th{
+    text-align: start;
 }
+.table_oil .td_price{
+    text-align: end;
+} */
+.table_oil tr {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.prices_services_list .chosen{
+    background-color: #333E7B;
+    color: #FFFFFF;
+}
+
+
+.card .faded{
+    opacity: 0.5;
+    margin-top: 15px;
+}
+/* .promotions_page  */
 .card_heading{
     color: #333E7B;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/* .promotions_page  */
+/* .card .p1{
+    margin-bottom: 15px;
+} */
+.card_img{
+    border-radius: 8px;
 }
 .promotions_page .block_heading{
     text-align: center;
@@ -1458,6 +1535,18 @@ td{
         justify-content: center;
         margin-right: -20px;
     }
+    .about_dot{
+        display: inline-block;
+        opacity: 1;
+        width: 10px;
+        height: 10px;
+        background-color: #C4C4C4;
+        border-radius: 100%;
+        margin-right: 10px;
+    }
+    .about_dot_chosen{
+        background-color: #333E7B;
+    }
     .dot{
         display: inline-block;
         opacity: 1;
@@ -1473,7 +1562,6 @@ td{
         height: 10px;
         background-color: #34407966;
     }
-
     /* // бренды */
     .choose_brand .input_area{
         width: 100%;
@@ -1492,6 +1580,10 @@ td{
     }
     .honda_service p{
         width: 300px;
+    }
+    .promo_cards .promo_card img{
+        width: 90vw;
+        min-width: 200px;
     }
 
 }
