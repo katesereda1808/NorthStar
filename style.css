@@ -55,11 +55,11 @@ h2{
 .button{
     font-weight: 600;
     font-size: 16px;
-    /* /// */
     width: 237px;
     min-width: 180px;
     height: 44px;
     border-radius: 4px;
+    cursor: pointer;
 }
 .red_button{
     background-color: #D31313;
@@ -396,12 +396,17 @@ h2{
     margin-bottom: 50px;
 }
 .input{
-    /* margin-right: 20px; */
     border-radius: 4px;
     padding-left: 10px;
     box-sizing: border-box;
+    outline: none;
 }
-
+summary{
+    cursor: pointer;
+}
+input[type=checkbox]{
+    cursor: pointer;
+}
 .main_page_block5{
     background-color: #333E7B;
     color: #FFFFFF;
@@ -1227,12 +1232,10 @@ td{
         width: auto;
         height: auto;
         background-color: transparent;
+        cursor: pointer;
     }
     .mobile{
         display: flex;
-    }
-    .hidden{
-        display: none;
     }
     .header_navbar_mobile{
         color: #FFFFFF;
@@ -1243,11 +1246,12 @@ td{
         top: 0px;
         width: 100vw;
         min-height: 100vh;
-        /* width: 100%; */
-        /* height: 100vh; */
         padding-left: 70px;
-        /* display: flex;
-        flex-direction: column; */
+        display: flex;
+        flex-direction: column;
+    }
+    .hidden{
+        display: none;
     }
     .navbar_header{
         font-size: 16px;
@@ -1278,6 +1282,7 @@ td{
         background-color: transparent;
         margin-top: 30px;
         margin-bottom: 70px;
+        cursor: pointer;
     }
     .header_main_colomn2_phone{
         display: none;
