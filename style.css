@@ -116,13 +116,7 @@ h2{
     padding-top: 20px;
     padding-bottom: 20px;
 }
-.header_main_colomn{
-    /* width: 50%; */
-}
 .header_main_colomn2{
-    /* display: flex;
-    flex-direction: row;
-    flex-wrap: wrap; */
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -134,7 +128,6 @@ h2{
     display: flex;
     flex-direction: row;
     align-items: center;
-    /* width: 160px; */
     margin-bottom: 15px;
 }
 .header_contacts img{
@@ -152,7 +145,6 @@ h2{
     display: flex;
     flex-direction: row;
     color: #FFFFFF;
-    /* margin-right: 20px; */
 }
 .header_main_navbar a{
     color: #FFFFFF;
@@ -167,10 +159,6 @@ h2{
     width: 125px;
     margin-right: 20px;
 }
-
-.header_btn{
-
-}
 /* ///// */
 .page_content{
  /* background-color: #9b9fb9; */
@@ -181,7 +169,6 @@ h2{
     flex-direction: column;
 }
 .footer{
-    
     color: #FFFFFF;
     background-color: #333E7B;
     display: flex;
@@ -208,7 +195,6 @@ h2{
 .footer_column1 li, .footer_column2 a{
     margin-top: 20px;
 }
-
 .footer_column1 a, .footer_column2 a{
     font-weight: 600;
     font-size: 16px;
@@ -242,11 +228,33 @@ h2{
 }
 .list_item{
     min-height: 70px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 40px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     border-bottom: 2px solid hsla(231, 41%, 34%, 0.2);
+    position: relative;
+}
+.list_item .arrow{
+    height: 100%;
+    width: 40px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #ffffff;
+    position: absolute;
+    right: -40px;
+    /* bottom: -2px; */
+}
+.list_item .arrow img{
+    transform: rotate(-90deg);
+    margin-right: 10px;
+}
+.services_item .arrow img{
+    transform: rotate(180deg);
 }
 .collapse-content{
     width: 70%;
@@ -254,22 +262,14 @@ h2{
     padding:  020px 0 20px;
 }
 
-.services_item{
-    /* height: 70px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 2px solid hsla(231, 41%, 34%, 0.2); */
+.services_list .emphasize{
+    color: #ffffff;
+    background-color: #D31313;
+    border-radius: 8px;
+    /* padding-left: 10px;
+    padding-right: 10px;
+    margin-left: -10px; */
 }
-
-
-/* 600
-16px */
-/* 500
-14px */
-/* 400
-14px */
 .main_page_block1{
     position: relative;
     display: flex;
@@ -285,6 +285,8 @@ h2{
 }
 .main_page_block1 a{
     color: #000;
+    width: 237px;
+    text-align: center;
 }
 .main_page_block1_img{
     margin-right: -100px;
@@ -301,6 +303,9 @@ h2{
 }
 .main_page_block1 li{
     margin-top: 20px;
+}
+.main_page_block1 li img{
+    margin-right: 10px;
 }
 .block1_btn{
     margin-top: 50px;
@@ -342,6 +347,11 @@ h2{
     margin-top: 60px;
     font-size: 16px;
     font-weight: 600;
+    cursor: pointer;
+    background-color: transparent;
+}
+.main_page_block2 .goTo img{
+    margin-left: 20px;
 }
 .main_page_block2 .block_heading{
     width: 100%;
@@ -582,6 +592,9 @@ input[type=checkbox]{
     width: 100%;
     margin-right: 0;
     border-radius: 8px;
+}
+.certificates .shown{
+    width: auto;
 }
 .about_page_block1 .block_heading{
     text-align: center;
@@ -1082,6 +1095,7 @@ td{
 }
 .certificates_item{
     width: 370px;
+    margin-bottom: 50px;
 }
 .certificate_preview{
     width: 375px;
@@ -1324,6 +1338,9 @@ td{
     .main_page_block1 .text h1{
         width: 250px;
     }
+    .list_item{
+        margin-right: 0;
+    }
     .list_item h2{
         font-size: 14px;
         font-weight: 600;
@@ -1563,23 +1580,18 @@ td{
     }
     /* // реквизиты */
     .certificates {
-        /* flex-direction: column; */
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
         overflow-x: scroll;
         align-items: center;
+        justify-content: center;
     }
     .certificates::-webkit-scrollbar{
         width: 0;
     }
-    .certificates_item{
-        margin-right: 50px;
-        margin-bottom: 50px;
-    }
     .dots {
         display: flex;
-        /* background-color: deeppink; */
         margin-bottom: 50px;
         align-items: center;
         z-index: 3;

@@ -42,7 +42,7 @@ if(document.querySelector('.slider_content')){
   getWidth();
   window.addEventListener('resize', getWidth);
 }
-function getWidth(){g
+function getWidth(){
   let width = document.documentElement.clientWidth;
   if(width<=900){
     hideSlides();
