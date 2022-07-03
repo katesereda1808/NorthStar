@@ -593,6 +593,9 @@ input[type=checkbox]{
     margin-right: 0;
     border-radius: 8px;
 }
+.certificate_info{
+
+}
 .certificates .shown{
     width: auto;
 }
@@ -697,7 +700,7 @@ table{
   width: 100%;
   justify-content: space-around;
   overflow: hidden;
-  min-width: 350px;
+  min-width: 335px;
 }
 /* .table_services  tbody, .table_oil tbody{
     width: 100%;
@@ -801,10 +804,15 @@ td{
 .table_oil{
     margin-bottom: 100px;
 }
-/* .table_oil th{
-    text-align: start;
+.table_oil th{
+    /* margin-right: 20px; */
+    padding-right: 0;
+    padding-left: 0;
 }
-.table_oil .td_price{
+.table_oil thead{
+    padding: 0 20px 0 20px;
+}
+/* .table_oil .td_price{
     text-align: end;
 } */
 .table_oil tr {
@@ -1094,7 +1102,7 @@ td{
     margin-top: 15px;
 }
 .certificates_item{
-    width: 370px;
+    min-width: 270px;
     margin-bottom: 50px;
 }
 .certificate_preview{
