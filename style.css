@@ -1719,6 +1719,8 @@ td{
         align-items: center;
         height: 70%;
         transition: 0.5s;
+        z-index: 3;
+
     }
     .direction_btn:hover {
         opacity: 1;

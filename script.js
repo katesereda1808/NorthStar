@@ -52,6 +52,7 @@ function getWidth(){
   }
 };
 
+
 ///////
 if(document.querySelector('.slider_content')){
   getWidth();
@@ -99,6 +100,11 @@ if (document.querySelector(".slider__content")) {
     slides[n].classList.add("shown");
     dots[n].classList.add("dot_active");
   }
+  function findSlide() {
+    let shown = slider_content.querySelector(".shown");
+    let slidesArr = Array.from(slides);
+    return slidesArr.indexOf(shown);
+  }
 
   let chevron_left = document.querySelector(".direction_left");
   let chevron_right = document.querySelector(".direction_right");
@@ -108,12 +114,22 @@ if (document.querySelector(".slider__content")) {
     if (width <= 400) {
       showSlides(0);
       indicator.classList.remove("hide");
+      chevron_left.addEventListener("click", () => showSlides(findSlide() - 1));
+      chevron_right.addEventListener("click", () => showSlides(findSlide() + 1));
       return "mobile";
     } else {
       for (let i = 0; i < slides.length; i++) {
         slides[i].style.display = "block";
       };
       indicator.classList.add("hide");
+      chevron_right.addEventListener("click", (e) => {
+        e.preventDefault();
+        scrollSlides(1);
+      });
+      chevron_left.addEventListener("click", (e) => {
+        e.preventDefault();
+        scrollSlides(-1);
+      });
       return "desktop";
     }
   }
@@ -134,14 +150,6 @@ if (document.querySelector(".slider__content")) {
     e.preventDefault();
     scrollSlides(-1);
   });
-  /// ёто уже для стрелок на моб версии
-  // function findSlide() {
-  //   let shown = slider_content.querySelector(".shown");
-  //   let slidesArr = Array.from(slides);
-  //   return slidesArr.indexOf(shown);
-  // }
-  // chevron_left.addEventListener("click", () => showSlides(findSlide() - 1));
-  // chevron_right.addEventListener("click", () => showSlides(findSlide() + 1));
 }
 
 
