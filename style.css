@@ -1247,7 +1247,6 @@ td{
     padding: 30px;
     display: flex;
     margin: auto 0;
-    
 }
 .chevron{
         background: url(./images/chevron.svg);
@@ -1707,6 +1706,9 @@ td{
 
 }
 
+
+/* ///////// */
+
 @media (max-width: 400px) {
     .direction_btn {
         padding: 16px;
@@ -1717,7 +1719,7 @@ td{
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 70%;
+        height: 75%;
         transition: 0.5s;
         z-index: 3;
 
@@ -1731,5 +1733,18 @@ td{
     .direction_left {
         left: 0;
     }
+    .about_page_block1 {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .slider {
+        width: 100%;
+        justify-content: center;
+    }
+    .slide img, .slider__content, .slide {
+        width: 100%;
+        height: auto;
+    }
+
 
 }
